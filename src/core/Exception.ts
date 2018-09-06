@@ -12,7 +12,7 @@ export default class Exception {
     public static ArgumentException = 'ArgumentException';
     public static ReaderException = 'ReaderException';
 
-    public constructor(private type: string, private message?: string) { }
+    public constructor(private type: string = null, private message?: string) { }
 
     public getType(): string {
         return this.type;
